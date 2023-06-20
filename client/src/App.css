@@ -1,0 +1,273 @@
+.App {
+  text-align: center;
+}
+body {
+  background-image: url(./img/80s.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  
+}
+
+*{
+    box-sizing: border-box;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .body {
+    padding: 20px;
+  
+}
+
+
+.sticky-btn {
+    padding: 10px;
+    background: #ff704d;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.sticky-btn:hover {
+    background: rgba(159, 164, 97, 0.58);
+}
+.sticky-note {
+    width: 300px;
+    border: none;
+    position: absolute;
+    /* why does the sticky note move with an added note (duplicated position but moves...) */
+    top: 30px;
+    left: 50px;
+    /* box-shadow: 5px 5px white; */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.sticky-note-header {
+  text-align: center;
+    background: #66cc99;
+    
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: move;
+}
+
+textarea {
+  background: #e6afc6;
+}
+.App-link {
+  color: #61dafb;
+}
+textarea {
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    height: 250px;
+    resize: none;
+    border: none;
+}
+
+/* @keyframes App-logo-spin { */
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+.close {
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 96, 96, 0.79);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.close:hover {
+    opacity: 0.8;
+}
+
+
+.title-home {
+  font-size: xx-large;
+  font-weight: 900;
+  color: #ff704d;
+  background-color: #66cc9982 ;
+  /* opacity: 0.33%; */
+  border-radius: 30%;
+}
+
+.month-year{
+  display:flex;
+  justify-content: space-around;
+  background-color: rgba(255, 127, 80, 0.447);
+  border-radius: 30%;
+  border-style: solid;
+  border-color: 3px #282c34;
+  padding-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-bottom: 50px;
+  
+}
+.quote-1 {
+  background-color: #ab68b1ce;
+  height: 30px;
+  border-radius: 30%;
+  border-style: dotted;
+  border-color: 4px #282c34;
+  font-family: cursive;
+}
+
+.sticky-btn-style {
+  margin-top: 40px;
+  margin-bottom:40px;
+  height: 100px;
+  width: 100px;
+  font-family: cursive;
+  box-shadow: 5px 10px #c8ff02;
+  background-color: rgb(229, 252, 78);
+}
+
+.sum-mon {
+  border-radius: 30%;
+  background: linear-gradient(-60deg, #ff714d65, #66cc9976 50%);
+  font-family: cursive;
+}
+
+
+.calendar-container {
+  display:flex;
+  justify-content: center;
+  /* background: linear-gradient(-90deg, #e6afc6, rgb(89,181,89) 50%); */
+  border-radius: 30%;
+}
+.text-center {
+  background: linear-gradient(-60deg, rgba(220, 152, 226, 0.491), #ffba7e76 50%);
+  margin-left:  350px;
+  margin-right: 350px;
+  border-radius: 50%;
+  color: rgba(50, 90, 119, 0.534)
+}
+
+.react-calendar__viewContainer {
+  background: #e6afc6;
+}
+.react-calendar__navigation {
+  background: #5dc8e6;
+}
+
+
+.description-note{
+  background-color: #e6afc6dd;
+  width:inherit;
+  height: inherit;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.title-note{
+  background-color: #66cc99cd;
+  width:inherit;
+  height: inherit;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.create-chaos {
+  margin-top: 80px;
+  font-size: xx-large;
+  font-family: cursive;
+  background: linear-gradient(-60deg, rgba(220, 152, 226, 0.491), #ffba7e76 50%);
+border-radius: 30%;
+}
+
+.size-cal-btn {
+  margin-top: 50px;
+}
+
+.updatetask {
+  background-color: #1c8a53;
+  /* width:inherit;
+  height: inherit; */
+  margin-left: 500px;
+  margin-right: 500px;
+  }
+  .submitupdate {
+    background: linear-gradient(-60deg, rgba(220, 152, 226, 0.925), #ffba7eda 50%);
+
+  }
+  .quote-container {
+    margin-top: 30px;
+    background-color: #1c9d74ce;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-style: solid;
+    border-color: 5px #0b532f;
+  }
+
+
+.coral {
+  box-shadow: 5px 10px #b73a9267;
+
+  background-color: rgba(216, 112, 147, 0.856);
+  margin-right: 150px;
+  margin-left: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20%;
+  font-size: larger;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.blue {
+  box-shadow: 5px 10px #4c4f18b1;
+  background-color: rgba(243, 228, 58, 0.82);
+  margin-right:80px;
+  margin-left: 80px;
+  font-size: larger;
+  /* text-decoration: overline; */
+  border-radius: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header-quote {
+  background-color: #0b532f;
+  border-radius: 30%;
+  font-family: serif;
+  color:#76e3ac;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* @media (prefers-reduced-motion: no-preference) {}
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+  sticky but */
